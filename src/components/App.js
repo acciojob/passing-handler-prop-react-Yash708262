@@ -1,15 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import Selection from './Selection';
 import ColourSelector from './ColourSelector';
 
 const App = () => {
-  const [color, setColor] = useState();
+  const [color, setColor] = useState("white"); 
+
   return (
     <div>
+      <ColourSelector applyColor={setColor} />
       <Selection color={color} />
-      <ColourSelector setColor={setColor} />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
