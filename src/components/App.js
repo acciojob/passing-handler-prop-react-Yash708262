@@ -3,7 +3,8 @@ import Selection from './Selection';
 import ColourSelector from './ColourSelector';
 
 const App = () => {
-  const [color, setColor] = useState("white"); 
+  // default grey background
+  const [color, setColor] = useState("rgb(239, 239, 239)");
 
   return (
     <div>
