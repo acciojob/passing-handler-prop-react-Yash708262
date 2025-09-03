@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Selection = ({ color }) => {
   const [boxColors, setBoxColors] = useState([
@@ -6,6 +6,15 @@ const Selection = ({ color }) => {
     "rgb(239, 239, 239)",
     "rgb(239, 239, 239)"
   ]);
+
+  // Reset all boxes to default color when a new color is selected
+  useEffect(() => {
+    setBoxColors([
+      "rgb(239, 239, 239)",
+      "rgb(239, 239, 239)",
+      "rgb(239, 239, 239)"
+    ]);
+  }, [color]);
 
   const changeBoxColor = (index) => {
     const newColors = [...boxColors];
