@@ -11,7 +11,7 @@ const boxStyle = {
 const Selection = ({ color }) => {
   return (
     <div>
-       <div className="fix-box" style={{ ...boxStyle, backgroundColor: color }}></div>
+      <div className="fix-box" style={{ ...boxStyle, backgroundColor: color }}></div>
       <div className="fix-box" style={{ ...boxStyle, backgroundColor: color }}></div>
       <div className="fix-box" style={{ ...boxStyle, backgroundColor: color }}></div>
     </div>
