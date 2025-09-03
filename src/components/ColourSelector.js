@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-const ColourSelector = ({ setColor }) => {
+const ColourSelector = ({ applyColor }) => {
   return (
     <div>
-      <button onClick={() => setColor('red')}>Red</button>
-      <button onClick={() => setColor('green')}>Green</button>
-      <button onClick={() => setColor('blue')}>Blue</button>
+      <button onClick={() => applyColor('red')}>Red</button>
+      <button onClick={() => applyColor('green')}>Green</button>
+      <button onClick={() => applyColor('blue')}>Blue</button>
     </div>
-  )
-}
+  );
+};
 
-export default ColourSelector
+export default ColourSelector;
