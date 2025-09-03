@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const boxStyle = {
   width: "100px",
@@ -6,15 +6,16 @@ const boxStyle = {
   margin: "10px",
   border: "1px solid black",
   display: "inline-block",
-  backgroundColor: "rgb(239, 239, 239)" 
 };
 
 const Selection = ({ color }) => {
+  const appliedColor = color || "rgb(239, 239, 239)";
+
   return (
     <div>
-      <div className="fix-box" style={{ ...boxStyle, backgroundColor: color }}></div>
-      <div className="fix-box" style={{ ...boxStyle, backgroundColor: color }}></div>
-      <div className="fix-box" style={{ ...boxStyle, backgroundColor: color }}></div>
+      <div className="fix-box" style={{ ...boxStyle, backgroundColor: appliedColor }}></div>
+      <div className="fix-box" style={{ ...boxStyle, backgroundColor: appliedColor }}></div>
+      <div className="fix-box" style={{ ...boxStyle, backgroundColor: appliedColor }}></div>
     </div>
   );
 };
